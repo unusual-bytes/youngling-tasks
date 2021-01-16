@@ -1,0 +1,22 @@
+{
+  "name": "youngling-tasks",
+  "version": "1.0.0",
+  "description": "All youngling padawan project exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unusual-bytes/youngling-tasks.git"
+  },
+  "keywords": [
+    "padawan"
+  ],
+  "author": "spitzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unusual-bytes/youngling-tasks/issues"
+  },
+  "homepage": "https://github.com/unusual-bytes/youngling-tasks#readme"
+}
