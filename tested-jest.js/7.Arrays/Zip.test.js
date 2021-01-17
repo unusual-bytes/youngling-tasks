@@ -11,3 +11,7 @@ const zip = (arr1, arr2) => {
     }
     
     console.log(zip([1, 2, 3], [4, 5, 6])) // [ [1, 4], [2, 5], [3, 6] ]
+
+    test('zips the elements together in an array', () => {
+        expect(zip([1, 2, 3], [4, 5, 6])).toStrictEqual([ [1, 4], [2, 5], [3, 6] ]);
+      });

@@ -18,4 +18,12 @@ const without = (exclude, arr) => {
   
   console.log(without([5, 6], [1, 2, 3, 4, 5, 6])) // [1, 2, 3, 4]
   console.log(without([4, 7], [1, 2, 3, 4, 5, 6])) // [1, 2, 3, 5, 6]
+
+  test('removes some of the elements from an array', () => {
+    expect(without([5, 6], [1, 2, 3, 4, 5, 6])).toStrictEqual([1, 2, 3, 4]);
+  });
+
+  test('removes some of the elements from an array', () => {
+    expect(without([4, 7], [1, 2, 3, 4, 5, 6])).toStrictEqual([1, 2, 3, 5, 6]);
+  });
   
