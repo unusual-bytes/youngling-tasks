@@ -21,3 +21,8 @@ const students = [{
 
 console.log(pluck("name", students)) // => ["Elena", "Masen", "Anton", "Kamen", "George"]
 
+test('pluck', () => {
+  expect(pluck("name", students)).toStrictEqual([ 'George', 'Elena', 'Masen', 'Anton', 'Kamen' ]);
+});
+
+

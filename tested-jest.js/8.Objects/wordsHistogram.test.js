@@ -15,3 +15,7 @@ const wordsHistogram = (str) => {
 }
 
 console.log(wordsHistogram(str)) // => {"a" : 3, "function" : 3, "is" : 1, "with" : 1, "very" : 1, "functional" : 1}
+
+test('Words Histogram', () => {
+    expect(wordsHistogram(str)).toStrictEqual({ a: 3, function: 3, is: 1, with: 1, very: 1, functional: 1 });
+  });

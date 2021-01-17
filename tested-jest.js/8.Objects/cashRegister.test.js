@@ -15,7 +15,9 @@ var cartForParty = {
 
   console.log(cashRegister(cartForParty)) // => 60.55
 
-
+  test('checks if an array contains the given number', () => {
+    expect(cashRegister(cartForParty)).toStrictEqual(60.55);
+  });
 
 
   /*const cashRegister = (itemsObject) => {
