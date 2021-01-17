@@ -1,32 +1,4 @@
-//Variable exercises
-
-//2. Sums and counts
-
-let count = 1;
-let sum = 3;
-sum = count + sum;
-count = sum + count;
-console.log(`sum: ${sum} count: ${count}`)
-
-//3. Discounts
-
-sum = 500
-discount = 0.25
-
-console.log(`AMD Ryzen 7 5800x \nЦена: ${sum} \nНамаление: ${(sum - sum*discount)} (-${discount}%)`)
-
-//4. Negative sum
-
-sum = 500
-console.log(`Negative sum: ${-sum}`)
-
-//5. Names
-
-firstName = "John"
-secondName = "Atanasov"
-
-console.log(firstName, secondName)
-
+const consoleSpy = jest.spyOn(console, 'log');
 //6. Library
 
 const book = {
@@ -45,4 +17,10 @@ let bookSum = book["Code Complete"] + book["Concrete Mathematics"] + book["Intro
 console.log(bookSum)
 console.log(bookSum - bookSum*0.25) //price with discount
 
+test('the sum of all of the books', () => {
+    expect(bookSum).toBe(310);
+    });
 
+test('prints the price with discount', () => {
+    expect(consoleSpy).toHaveBeenCalledWith(232.5);
+    });
