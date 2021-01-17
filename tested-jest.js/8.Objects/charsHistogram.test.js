@@ -16,3 +16,7 @@ const charsHistogram = (str) => {
 
 console.log(charsHistogram(str));
 
+test('check if the function returns something defined', () => {
+    expect(charsHistogram(str)).toBeDefined();
+  });
+
