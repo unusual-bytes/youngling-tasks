@@ -13,16 +13,32 @@ const validateCreditCard = (cardNumber) => {
     return valid;
 }
 
-console.log(validateCreditCard("9999777788880000")); //valid, OUTPUT: true
-console.log(validateCreditCard("6666666666661666")); //valid, OUTPUT: true
+test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("9999777788880000")).toStrictEqual(true);
+  });
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("6666666666661666")).toStrictEqual(true);
+  });
 
-console.log(validateCreditCard("a92332119c011112")); //invalid, OUTPUT: false
-console.log(validateCreditCard("4444444444444444")); //invalid, OUTPUT: false
-console.log(validateCreditCard("1111111111111110")); //invalid, OUTPUT: false
-console.log(validateCreditCard("6666666666666661")); //invalid, OUTPUT: false
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("a92332119c011112")).toStrictEqual(false);
+  });
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("4444444444444444")).toStrictEqual(false);
+  });
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("1111111111111110")).toStrictEqual(false);
+  });
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("6666666666666661")).toStrictEqual(false);
+  });
 
-console.log(validateCreditCard("9999-7777-8888-0000")); //valid, OUTPUT: true
-console.log(validateCreditCard("6666-6666-6666-1666")); //valid, OUTPUT: true
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("9999-7777-8888-0000")).toStrictEqual(true);
+  });
+  test('checks if a credit card is valid or not', () => {
+    expect(validateCreditCard("6666-6666-6666-1666")).toStrictEqual(true);
+  });
 
 /* validateCreditCard
 Implement a function called validateCreditCard that returns true or false, whether it is valid or not.
